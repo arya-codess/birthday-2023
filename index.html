@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>16th Birthday Party</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function toggleMenu() {
+        const menuContainer = document.querySelector('.menu-container');
+        menuContainer.classList.toggle('open');
+    }
+
+    function toggleSubmenu() {
+        const submenu = document.querySelector('.submenu');
+        submenu.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my 16th Birthday Party!</h1>
+    <div class="menu-button" onclick="toggleMenu()">&#9776;</div>
+  </header>
+  
+  <main>
+    <section class="invitation">
+      <h2>You're Invited!</h2>
+      <p>Come celebrate with me on December 16th, 2023 at Olive County Apartments, Sector-5, Vasundhara!</p>
+      <p>Here's the venue:</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14004.089099552135!2d77.37888000000002!3d28.659051699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf00a869b04d1%3A0xaa3b11c3392cab85!2sOlive%20County!5e0!3m2!1sen!2sin!4v1702530749883!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      <!-- Add more details about the party here -->
+    </section>
+    <section class="rsvp">
+      <h2>RSVP</h2>
+      <p>Let me know if you can make it!</p>
+      <button id="yesButton">Yes, I'll be there!</button>
+      <button id="noButton">Sorry, I can't make it.</button>
+      <p id="response"></p>
+      <!-- Use JavaScript to handle button clicks and update the response -->
+    </section>
+    <!-- Add more sections or content as needed -->
+  </main>
+  <div class="menu-container">
+    <div class="menu-header">other projects</div>
+    <span class="close-button" onclick="toggleMenu()">&#10006;</span>
+    <ul class="menu-list">
+        <li><a class="menu-link" href="https://projectdelta.vercel.app/" target="_blank">music artists</a></li>
+        <li><a class="menu-link" href="https://animeadda.vercel.app/" target="_blank">animeadda</a></li>
+        <li><a class="menu-link" href="https://projectdelta.vercel.app/contact.html" target="_blank">socials</a></li>
+    </ul>
+  </div>
+  </div>
+  
+  <footer>
+    <p>© 2023 YourName. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
